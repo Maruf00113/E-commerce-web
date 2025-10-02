@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        slide: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '95%': { transform: 'translateX(-200%)' }
+                        }
+                    },
+                    animation: {
+                        slide: 'slide 20s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Online shoping</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <html lang="en" class="scroll-smooth">
+    <!-- home page -->
+    <header>
+        <!-- navigation var -->
+        <section id="home page">
+            <nav class="w-full shadow-lg fixed top-0 left-0 z-50">
+
+                <section class="flex justify-between items-center p-2 bg-teal-500">
+                    <!-- brand logo -->
+                    <div class="flex items-center space-x-3 pl-10">
+                        <img src="image/brand logo.png" alt="brand logo"
+                            class="w-16 h-16 rounded-full hover:scale-110 duration-300">
+                        <!-- brand name -->
+                        <p class="font-bold text-sm"> <span class="text-blue-900 text-2xl font-Bitcount+Ink">Alam</span>
+                            online shoping</p>
+                    </div>
+
+                    <ul class="flex space-x-2 pr-3 text-sm font-bold sm:space-x-3 md:space-x-4 lg:space-x-5">
+                        <li class="p-2 hover:bg-purple-600 rounded-sm hover:text-white duration-300"><a
+                                href="#">Home</a></li>
+                        <li class="p-2 hover:bg-purple-600 rounded-sm hover:text-white duration-300"><a
+                                href="#products">Products</a></li>
+                        <li class="p-2 hover:bg-purple-600 rounded-sm hover:text-white duration-300"><a
+                                href="#reviews">Reviews</a></li>
+                        <li class="p-2 hover:bg-purple-600 rounded-sm hover:text-white duration-300"><a
+                                href="#contact">Contact</a></li>
+                    </ul>
+
+                </section>
+
+            </nav>
+        </section>
+
+        <!-- image slider -->
+
+        <section class="mt-20 bg-gray-100 px-0">
+            <div class="w-full overflow-hidden">
+                <div class="flex w-full animate-slide gap-4 bg-blue-600">
+                    <img src="image/shoping banner 1.png" alt="">
+                    <img src="image/shoping banner 2.png" alt="">
+                    <img src="image/shoping banner 3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <main id="products" class="bg-gray-200">
+
+        <!-- products -->
+        <section class=" grid grid-cols-1 justify-center gap-3 m-5 bg-white sm:grid-cols-2 lg:grid-cols-3">
+            <!-- product 1 -->
+            <div class="m-5 p-4 border-2 rounded-md shadow-lg space-y-3 hover:scale-105 duration-300">
+                <img class="" src="image/cloth pic 1.jpg" alt="">
+                <p class="font-bold text-lg leading-tight text-justify">Title: Men's Bomber Jacket Fashion Stylish
+                    Lightweight Windbreaker Spring Fall Casual Jackets for Men</p>
+                <p class="text-justify text-sm items-align:start leading-tight opacity-60">
+                    XiaoYouYu Fabric: polyester; Lightweight, soft fabric for your comfort<br>
+                    XiaoYouYu Design: 2 side pockets, 1 deep inner pocket <br>
+                    XiaoYouYu Feature: ribbed collar, hem and cuffs, full zip, long sleeves for warmth and style <br>
+                    XiaoYouYu Style: classic lightweight bomber jacket for men, easy to match, suitable for winter,
+                    autumn, spring. <br>
+                    XiaoYouYu Occassion: not only suitable for daily wear, but also for work, street fashion, party and
+                    golf
+                </p>
+                <p>Price: $33.99</p>
+                <button
+                    class="mx-[120px] bg-blue-500 p-2 text-white font-bold rounded-sm hover:bg-blue-800 duration-300 ">buy
+                    now</button>
+            </div>
+
+            <!-- product 2 -->
+            <div class="m-5 p-4 border-2 rounded-md shadow-lg space-y-3 hover:scale-105 duration-300">
+                <img class="w-[11rem] mx-auto mb-10" src="image/watch pic 1.jpg" alt="">
+                <p class="font-bold text-lg leading-tight text-justify">Title: Anne Klein Women's Genuine Diamond Dial
+                    Bangle Watch</p>
+                <p class="text-justify text-sm items-align:start leading-tight opacity-60">
+                    Mineral crystal lens; glossy black dial with genuine diamond at 12; gold-tone hands and markers
+                    Black enamel filled gold-tone bangle with adjustable end links; jewelry clasp and extender link
+                    Inner band circumference: 6.75 inches
+                    Japanese quartz movement
+                    Case diameter: 28 millimeters
+                    Water resistant to 30 meters (99 feet): In general, withstands splashes or brief immersion in water,
+                    but not suitable for swimming or bathing
+                </p>
+                <p>Price: $27.99</p>
+                <button
+                    class="mx-[130px] mt-[100px] bg-blue-500 p-2 text-white font-bold rounded-sm hover:bg-blue-800 duration-300 ">buy
+                    now</button>
+            </div>
+
+            <!-- product 3 -->
+            <div class="m-5 p-4 border-2 rounded-md shadow-lg space-y-3 hover:scale-105 duration-300">
+                <img class="w-[11rem] mx-auto mb-10" src="image/watch pic 2.jpg" alt="">
+                <p class="font-bold text-lg leading-tight text-justify">Title: Men's Bomber Jacket Fashion Stylish
+                    Lightweight Windbreaker Spring Fall Casual Jackets for Men</p>
+                <p class="text-justify text-sm items-align:start leading-tight opacity-60">
+                    Mineral crystal lens; glossy black dial with genuine diamond at 12; gold-tone hands and markers
+                    Black enamel filled gold-tone bangle with adjustable end links; jewelry clasp and extender link
+                    Inner band circumference: 6.75 inches
+                    Japanese quartz movement
+                    Case diameter: 28 millimeters
+                    Water resistant to 30 meters (99 feet): In general, withstands splashes or brief immersion in water,
+                    but not suitable for swimming or bathing
+                </p>
+                <p>Price: $35.99</p>
+                <button
+                    class="mx-[120px] bg-blue-500 p-2 text-white font-bold rounded-sm hover:bg-blue-800 duration-300 ">buy
+                    now</button>
+            </div>
+
+            <!-- product 4 -->
+            <div class="m-5 p-4 border-2 rounded-md shadow-lg space-y-3 hover:scale-105 duration-300">
+                <img class="w-[11rem] mx-auto mb-10" src="image/watch pic 3.jpg" alt="">
+                <p class="font-bold text-lg leading-tight text-justify">Title:Alam brand er gori</p>
+                <p class="text-justify text-sm items-align:start leading-tight opacity-60">
+                    Mineral crystal lens; glossy black dial with genuine diamond at 12; gold-tone hands and markers
+                    Black enamel filled gold-tone bangle with adjustable end links; jewelry clasp and extender link
+                    Inner band circumference: 6.75 inches
+                    Japanese quartz movement
+                    Case diameter: 28 millimeters
+                    Water resistant to 30 meters (99 feet): In general, withstands splashes or brief immersion in water,
+                    but not suitable for swimming or bathing
+                </p>
+                <p>Price: $45.99</p>
+                <button
+                    class="mx-[120px] bg-blue-500 p-2 text-white font-bold rounded-sm hover:bg-blue-800 duration-300 ">buy
+                    now</button>
+            </div>
+
+            <!-- product 5 -->
+            <div class="m-5 p-4 border-2 rounded-md shadow-lg space-y-3 hover:scale-105 duration-300">
+                <img class="" src="image/cloth pic 2.jpg" alt="">
+                <p class="font-bold text-lg leading-tight text-justify">Title: Men's Bomber Jacket Fashion Stylish
+                    Lightweight Windbreaker Spring Fall Casual Jackets for Men</p>
+                <p class="text-justify text-sm items-align:start leading-tight opacity-60">
+                    XiaoYouYu Fabric: polyester; Lightweight, soft fabric for your comfort<br>
+                    XiaoYouYu Design: 2 side pockets, 1 deep inner pocket <br>
+                    XiaoYouYu Feature: ribbed collar, hem and cuffs, full zip, long sleeves for warmth and style <br>
+                    XiaoYouYu Style: classic lightweight bomber jacket for men, easy to match, suitable for winter,
+                    autumn, spring. <br>
+                    XiaoYouYu Occassion: not only suitable for daily wear, but also for work, street fashion, party and
+                    golf
+                </p>
+                <p>Price: $38.99</p>
+                <button
+                    class="mx-[120px] bg-blue-500 p-2 text-white font-bold rounded-sm hover:bg-blue-800 duration-300 ">buy
+                    now</button>
+            </div>
+            <!-- product 6 -->
+            <div class="m-5 p-4 border-2 rounded-md shadow-lg space-y-3 hover:scale-105 duration-300">
+                <img class="w-[11rem] mx-auto mb-10" src="image/watch pic 4.jpg" alt="">
+                <p class="font-bold text-lg leading-tight text-justify">Title:Anne Klein Women's Genuine Diamond Dial
+                    Bangle Watch</p>
+                <p class="text-justify text-sm items-align:start leading-tight opacity-60">
+                    XiaoYouYu Fabric: polyester; Lightweight, soft fabric for your comfort <br>
+                    XiaoYouYu Design: 2 side pockets, 1 deep inner pocket <br>
+                    XiaoYouYu Feature: ribbed collar, hem and cuffs, full zip, long sleeves for warmth and style <br>
+                    XiaoYouYu Style: classic lightweight bomber jacket for men, easy to match, suitable for winter,
+                    autumn, spring. <br>
+                    XiaoYouYu Occassion: not only suitable for daily wear, but also for work, street fashion, party and
+                    golf
+                </p>
+                <p>Price: $35.99</p>
+                <button
+                    class="mx-[120px] bg-blue-500 p-2 text-white font-bold rounded-sm hover:bg-blue-800 duration-300 ">buy
+                    now</button>
+            </div>
+        </section>
+
+        <!-- reviews -->
+
+        <p class="font-bold text-3xl text-center mx-w-* mb-[40px] text-blue-600">Top reviews from different
+            countries</p>
+        <section id="reviews" class="pt-[80px] px-10 mb-10 bg-gray-200 ">
+            <!-- 1st review -->
+            <div class="flex flex-wrap items-center border border-1 shadow-xl p-5">
+                <img class="h-[22px]" src="image/anonymous image.png" alt="">
+                <p class="ml-3">Alam sultana</p> <br>
+                <p class="text-yellow-500 font-bold text-xl basis-full">★ ★ ★ ★ <span class="text-gray-400">★</span>
+                    <span class="font-bold text-xl text-black ml-4">Nice jacket</span></p>
+                <p class="opacity-50 mb-10">
+                    Reviewed in the bangladesh on september 9, 2025
+                </p>
+                <p class="basis-full">
+                    Great quality for the price! For being a lightweight jacket, it’s surprisingly warm and wind
+                    resistant. I ordered a large and it fit as expected.
+                </p>
+
+                <p class="bg-gray-300 mt-10 border border-2 rounded-full p-2 border-blue-900 cursor-pointer hover:bg-black hover:text-white">
+                    helpful
+                </p>
+                <p
+                    class="bg-gray-300 mt-10 ml-[10px] border border-2 rounded-full p-2 border-blue-900 cursor-pointer hover:bg-black duration-300 hover:text-white duration-300">
+                    report</p>
+
+            </div>
+            <!-- 2nd review -->
+            <div class="flex flex-wrap  items-center border border-1 shadow-xl p-5 mt-10">
+                <img class="h-[22px]" src="image/anonymous image.png" alt="">
+                <p class="ml-3">farhad acermen</p> <br>
+                <p class="text-yellow-500 font-bold text-xl basis-full">★ ★ ★ <span class="text-gray-400">★ ★</span>
+                    <span class="font-bold text-xl text-black ml-4">good watch</span></p>
+                <p class="opacity-50 mb-10">
+                    Reviewed in the india on september 10, 2025
+                </p>
+                <p>
+                    I’ve been using this watch for a while, and I’m really impressed. The design is sleek and stylish,
+                    making it perfect for both casual and formal wear. The build quality feels solid, and the strap is
+                    comfortable even after long hours. The battery life is excellent, and the timekeeping is accurate.
+                    What I love most is how lightweight it feels on the wrist. Overall, a great watch at a fair
+                    price—definitely worth recommending!
+                </p>
+
+                <p
+                    class="mt-10 border border-2 rounded-full p-2 border-blue-900 cursor-pointer hover:bg-black hover:text-white bg-gray-300">
+                    helpful
+                </p>
+                <p
+                    class="bg-gray-300 mt-10 ml-[10px] border border-2 rounded-full p-2 border-blue-900 cursor-pointer hover:bg-black duration-300 hover:text-white duration-300">
+                    report</p>
+
+            </div>
+
+        </section>
+
+        <!-- contacts -->
+
+        <section id="contact" class="p-10 bg-gray-800">
+            <section class="">
+                <p class="text-white text-5xl font-bold">Contact with us</p>
+                <p class="text-white text-2xl font-bold mt-[70px] mb-[20px]">Email: maruf117155@gmail.com</p>
+                <p class="text-white text-2xl font-bold">Phone number : 016900111616</p>
+
+                <div class="flex flex-wrap mt-[100px] gap-4">
+                    <a class="m-0 bg-blue-200 px-6 py-3 rounded-sm hover:bg-blue-900 duration-300 hover:text-white duration-300 font-bold"
+                        href="https://www.facebook.com/arafat.maruf.779" target="_blank">facebook</a>
+
+                    <a class="m-0 bg-blue-200 px-6 py-3 rounded-sm hover:bg-green-500 duration-300 hover:text-white duration-300 font-bold"
+                        href="https://wa.me/8801690011616" target="_blank">whatsapp</a>
+
+                    <a class="m-0 bg-blue-200 px-6 py-3 rounded-sm duration-300 hover:bg-blue-700 hover:text-white font-bold hover:scale-110"
+                        href="https://www.linkedin.com/in/arafat-maruf-b432b5370/" target="_blank">LinkedIn</a>
+
+                        <a class="px-6 py-3 rounded-lg bg-amber-200 hover:bg-blue-300 duration-300 hover:scale-110 sm:translate-x-[100px] md:translate-x-[200px] lg:translate-x-[400px]"
+                        href="#home page">Back to top ↑</a>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer class="text-center py-4 bg-gray-600 text-white">
+        &copy; 2025 Mywebpage. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
